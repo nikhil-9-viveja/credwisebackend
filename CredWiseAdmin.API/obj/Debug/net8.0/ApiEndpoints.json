@@ -1,0 +1,608 @@
+[
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDApplicationController",
+    "Method": "CreateFDApplication",
+    "RelativePath": "api/FDApplication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.CreateFDApplicationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDApplicationResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDApplicationController",
+    "Method": "UpdateFDApplication",
+    "RelativePath": "api/FDApplication",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.UpdateFDApplicationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDApplicationResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDApplicationController",
+    "Method": "GetAllFDApplications",
+    "RelativePath": "api/FDApplication",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CredWiseAdmin.Core.DTOs.FDProduct.FDApplicationResponseDto, CredWiseAdmin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDApplicationController",
+    "Method": "DeleteFDApplication",
+    "RelativePath": "api/FDApplication/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDApplicationController",
+    "Method": "GetFDApplicationById",
+    "RelativePath": "api/FDApplication/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDApplicationResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTransactionController",
+    "Method": "CreateFDTransaction",
+    "RelativePath": "api/FDTransaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.CreateFDTransactionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDTransactionResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTransactionController",
+    "Method": "UpdateFDTransaction",
+    "RelativePath": "api/FDTransaction",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.UpdateFDTransactionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDTransactionResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTransactionController",
+    "Method": "GetAllFDTransactions",
+    "RelativePath": "api/FDTransaction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CredWiseAdmin.Core.DTOs.FDProduct.FDTransactionResponseDto, CredWiseAdmin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTransactionController",
+    "Method": "DeleteFDTransaction",
+    "RelativePath": "api/FDTransaction/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTransactionController",
+    "Method": "GetFDTransactionById",
+    "RelativePath": "api/FDTransaction/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDTransactionResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTypeController",
+    "Method": "CreateFDType",
+    "RelativePath": "api/FDType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.CreateFDTypeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDTypeResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTypeController",
+    "Method": "UpdateFDType",
+    "RelativePath": "api/FDType",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.UpdateFDTypeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDTypeResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTypeController",
+    "Method": "GetAllFDTypes",
+    "RelativePath": "api/FDType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CredWiseAdmin.Core.DTOs.FDProduct.FDTypeResponseDto, CredWiseAdmin.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTypeController",
+    "Method": "DeleteFDType",
+    "RelativePath": "api/FDType/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.FDTypeController",
+    "Method": "GetFDTypeById",
+    "RelativePath": "api/FDType/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.FDProduct.FDTypeResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "GetLoanProducts",
+    "RelativePath": "api/LoanProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductListResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "Create",
+    "RelativePath": "api/LoanProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.CreateLoanProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "GetById",
+    "RelativePath": "api/LoanProduct/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "Update",
+    "RelativePath": "api/LoanProduct/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.UpdateLoanProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "Delete",
+    "RelativePath": "api/LoanProduct/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "GetActive",
+    "RelativePath": "api/LoanProduct/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductListResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "CreateGoldLoan",
+    "RelativePath": "api/LoanProduct/gold",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.CreateGoldLoanProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "CreateHomeLoan",
+    "RelativePath": "api/LoanProduct/home",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.CreateHomeLoanProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "CreatePersonalLoan",
+    "RelativePath": "api/LoanProduct/personal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.CreatePersonalLoanProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.LoanProductController",
+    "Method": "GetByType",
+    "RelativePath": "api/LoanProduct/type/{loanType}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loanType",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CredWiseAdmin.Core.DTOs.LoanProduct.LoanProductListResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CredWiseAdmin.API.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CredWiseAdmin.API.WeatherForecast, CredWiseAdmin.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
