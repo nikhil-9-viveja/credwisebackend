@@ -40,6 +40,21 @@ namespace CredWiseAdmin.API
             // Register AutoMapper
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+            // Register UserRepository
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+            // CORS for Angular dev server
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAngularDev",
+                    policy =>
+                    {
+                        policy.WithOrigins("http://localhost:4200")
+                              .AllowAnyHeader()
+                              .AllowAnyMethod();
+                    });
+            });
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -56,6 +71,9 @@ namespace CredWiseAdmin.API
             app.UseMiddleware<CredWiseAdmin.API.Middleware.ExceptionMiddleware>();
 
             app.UseHttpsRedirection();
+
+            // Enable CORS globally
+            app.UseCors("AllowAngularDev");
 
             app.UseAuthorization();
 

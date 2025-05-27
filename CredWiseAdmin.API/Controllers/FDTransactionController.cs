@@ -20,7 +20,8 @@ namespace CredWiseAdmin.API.Controllers
         [HttpPost]
         public async Task<ActionResult<FDTransactionResponseDto>> CreateFDTransaction(CreateFDTransactionDto dto)
         {
-            var result = await _fdTransactionService.CreateFDTransactionAsync(dto, User.Identity.Name);
+            var createdBy = User?.Identity?.Name ?? "system";
+            var result = await _fdTransactionService.CreateFDTransactionAsync(dto, createdBy);
             return Ok(result);
         }
 

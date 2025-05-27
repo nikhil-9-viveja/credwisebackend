@@ -11,7 +11,8 @@ namespace CredWiseAdmin.Core.DTOs.FDProduct
         public int FdapplicationId { get; set; }
 
         [Required]
-        [RegularExpression("^(Deposit|InterestPayout|MaturityPayout|PrematureWithdrawal|Refund)$", ErrorMessage = "Invalid transaction type.")]
+        [RegularExpression("^(Deposit|InterestPayout|MaturityPayout|PrematureWithdrawal|Refund)$", 
+            ErrorMessage = "TransactionType must be one of: Deposit, InterestPayout, MaturityPayout, PrematureWithdrawal, Refund")]
         public string TransactionType { get; set; }
 
         [Required]
@@ -22,11 +23,12 @@ namespace CredWiseAdmin.Core.DTOs.FDProduct
         public DateTime TransactionDate { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [RegularExpression("^(NEFT|RTGS|IMPS|UPI|CASH|CHEQUE)$", 
+            ErrorMessage = "PaymentMethod must be one of: NEFT, RTGS, IMPS, UPI, CASH, CHEQUE")]
         public string PaymentMethod { get; set; }
 
         [Required]
-        [RegularExpression("^(Success|Failed|Pending)$", ErrorMessage = "Invalid transaction status.")]
+        [RegularExpression("^(Success|Failed|Pending)$", ErrorMessage = "TransactionStatus must be one of: Success, Failed, Pending")]
         public string TransactionStatus { get; set; }
 
         [StringLength(100)]

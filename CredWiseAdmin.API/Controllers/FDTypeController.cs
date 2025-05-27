@@ -20,14 +20,18 @@ namespace CredWiseAdmin.API.Controllers
         [HttpPost]
         public async Task<ActionResult<FDTypeResponseDto>> CreateFDType(CreateFDTypeDto dto)
         {
-            var result = await _fdTypeService.CreateFDTypeAsync(dto, User.Identity.Name);
+            var createdBy = User?.Identity?.Name;
+            if (string.IsNullOrWhiteSpace(createdBy))
+                createdBy = "system";
+
+            var result = await _fdTypeService.CreateFDTypeAsync(dto, createdBy);
             return Ok(result);
         }
 
         [HttpPut]
         public async Task<ActionResult<FDTypeResponseDto>> UpdateFDType(UpdateFDTypeDto dto)
         {
-            var result = await _fdTypeService.UpdateFDTypeAsync(dto, User.Identity.Name);
+            var result = await _fdTypeService.UpdateFDTypeAsync(dto, User.Identity?.Name ?? "system");
             if (result == null)
                 return NotFound();
             return Ok(result);

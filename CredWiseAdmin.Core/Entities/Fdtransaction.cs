@@ -34,20 +34,6 @@ public partial class Fdtransaction : BaseEntity
     [StringLength(100)]
     public string? TransactionReference { get; set; }
 
-    public bool IsActive { get; set; }
-
-    [Column(TypeName = "datetime")]
-    public DateTime CreatedAt { get; set; }
-
-    [StringLength(100)]
-    public string CreatedBy { get; set; } = null!;
-
-    [Column(TypeName = "datetime")]
-    public DateTime? ModifiedAt { get; set; }
-
-    [StringLength(100)]
-    public string? ModifiedBy { get; set; }
-
     [ForeignKey("FdapplicationId")]
     [InverseProperty("Fdtransactions")]
     public virtual Fdapplication Fdapplication { get; set; } = null!;

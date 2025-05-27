@@ -10,6 +10,7 @@ C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\Cred
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.AssemblyInfoInputs.cache
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.AssemblyInfo.cs
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.csproj.CoreCompileInputs.cache
+C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.sourcelink.json
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\CredWise.45AD821A.Up2Date
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.dll
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\refint\CredWiseAdmin.Service.dll

@@ -1028,35 +1028,26 @@
       "CreateFDApplicationDto": {
         "required": [
           "amount",
-          "duration",
-          "fdtypeId",
-          "interestRate",
-          "userId"
+          "email",
+          "fdTypeId"
         ],
         "type": "object",
         "properties": {
-          "userId": {
-            "type": "integer",
-            "format": "int32"
+          "email": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "format": "email"
           },
-          "fdtypeId": {
+          "fdTypeId": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
           "amount": {
             "maximum": 10000000,
             "minimum": 1000,
-            "type": "number",
-            "format": "double"
-          },
-          "duration": {
-            "pattern": "^(12|36)$",
-            "type": "integer",
-            "format": "int32"
-          },
-          "interestRate": {
-            "maximum": 100,
-            "minimum": 0.1,
             "type": "number",
             "format": "double"
           }
@@ -1088,8 +1079,8 @@
             "format": "double"
           },
           "paymentMethod": {
-            "maxLength": 50,
-            "minLength": 0,
+            "minLength": 1,
+            "pattern": "^(NEFT|RTGS|IMPS|UPI|CASH|CHEQUE)$",
             "type": "string"
           }
         },
@@ -1107,7 +1098,8 @@
         "properties": {
           "name": {
             "maxLength": 50,
-            "minLength": 0,
+            "minLength": 3,
+            "pattern": "^[a-zA-Z0-9\\s-]+$",
             "type": "string"
           },
           "description": {
@@ -1722,14 +1714,20 @@
         "type": "object",
         "properties": {
           "fdapplicationId": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
           "userId": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
           "fdtypeId": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
@@ -1753,6 +1751,7 @@
           "status": {
             "maxLength": 50,
             "minLength": 0,
+            "pattern": "^(Pending|Approved|Rejected|Active|Matured|PrematureClosed)$",
             "type": "string"
           },
           "maturityDate": {
@@ -1807,8 +1806,8 @@
             "format": "date-time"
           },
           "paymentMethod": {
-            "maxLength": 50,
-            "minLength": 0,
+            "minLength": 1,
+            "pattern": "^(NEFT|RTGS|IMPS|UPI|CASH|CHEQUE)$",
             "type": "string"
           },
           "transactionStatus": {
@@ -1840,12 +1839,15 @@
         "type": "object",
         "properties": {
           "fdtypeId": {
+            "maximum": 2147483647,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
           "name": {
             "maxLength": 50,
-            "minLength": 0,
+            "minLength": 3,
+            "pattern": "^[a-zA-Z0-9\\s-]+$",
             "type": "string"
           },
           "description": {

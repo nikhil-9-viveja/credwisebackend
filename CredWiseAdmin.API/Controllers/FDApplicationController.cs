@@ -20,7 +20,8 @@ namespace CredWiseAdmin.API.Controllers
         [HttpPost]
         public async Task<ActionResult<FDApplicationResponseDto>> CreateFDApplication(CreateFDApplicationDto dto)
         {
-            var result = await _fdApplicationService.CreateFDApplicationAsync(dto, User.Identity?.Name ?? "system");
+            var createdBy = User?.Identity?.Name ?? "system";
+            var result = await _fdApplicationService.CreateFDApplicationAsync(dto, createdBy);
             return Ok(result);
         }
 

@@ -1,6 +1,7 @@
 using CredWiseAdmin.Core.Entities;
 using Microsoft.EntityFrameworkCore;
-
+using System.ComponentModel.DataAnnotations;
+                                            
 namespace CredWiseAdmin.Repository
 {
     public class AppDbContext : DbContext
@@ -9,7 +10,7 @@ namespace CredWiseAdmin.Repository
             : base(options)
         {
         }
-
+        public DbSet<User> Users { get; set; }
         public DbSet<LoanProduct> LoanProducts { get; set; }
         public DbSet<HomeLoanDetail> HomeLoanDetails { get; set; }
         public DbSet<PersonalLoanDetail> PersonalLoanDetails { get; set; }

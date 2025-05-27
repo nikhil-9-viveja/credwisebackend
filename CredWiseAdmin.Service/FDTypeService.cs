@@ -4,16 +4,19 @@ using CredWiseAdmin.Repository.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using CredWiseAdmin.Service.Interfaces;
+using AutoMapper;
 
 namespace CredWiseAdmin.Service
 {
     public class FDTypeService : IFDTypeService
     {
         private readonly IFDTypeRepository _fdTypeRepository;
+        private readonly IMapper _mapper;
 
-        public FDTypeService(IFDTypeRepository fdTypeRepository)
+        public FDTypeService(IFDTypeRepository fdTypeRepository, IMapper mapper)
         {
             _fdTypeRepository = fdTypeRepository;
+            _mapper = mapper;
         }
 
         public async Task<FDTypeResponseDto> CreateFDTypeAsync(CreateFDTypeDto dto, string createdBy)
@@ -37,13 +40,12 @@ namespace CredWiseAdmin.Service
             try
             {
                 var result = await _fdTypeRepository.AddAsync(fdType);
-                return MapToResponseDto(result);
+                return _mapper.Map<FDTypeResponseDto>(result);
             }
             catch (Exception ex)
             {
-                // Print to console or log file
-                Console.WriteLine("EXCEPTION: " + (ex.InnerException?.Message ?? ex.Message));
-                throw; // rethrow so you still see the error in the API
+                System.IO.File.AppendAllText("C:\\temp\\fdtype_error.txt", (ex.InnerException?.Message ?? ex.Message) + System.Environment.NewLine);
+                throw;
             }
         }
 
@@ -55,10 +57,24 @@ namespace CredWiseAdmin.Service
 
             fdType.Name = dto.Name;
             fdType.Description = dto.Description;
+            fdType.InterestRate = dto.InterestRate;
+            fdType.MinAmount = dto.MinAmount;
+            fdType.MaxAmount = dto.MaxAmount;
+            fdType.Duration = dto.Duration;
+            fdType.IsActive = dto.IsActive;
             fdType.ModifiedBy = modifiedBy;
+            fdType.ModifiedAt = DateTime.UtcNow;
 
-            var result = await _fdTypeRepository.UpdateAsync(fdType);
-            return MapToResponseDto(result);
+            try
+            {
+                var result = await _fdTypeRepository.UpdateAsync(fdType);
+                return _mapper.Map<FDTypeResponseDto>(result);
+            }
+            catch (Exception ex)
+            {
+                System.IO.File.AppendAllText("C:\\temp\\fdtype_error.txt", (ex.InnerException?.Message ?? ex.Message) + System.Environment.NewLine);
+                throw;
+            }
         }
 
         public async Task<bool> DeleteFDTypeAsync(int fdtypeId, string modifiedBy)
@@ -74,26 +90,13 @@ namespace CredWiseAdmin.Service
         public async Task<FDTypeResponseDto?> GetFDTypeByIdAsync(int fdtypeId)
         {
             var fdType = await _fdTypeRepository.GetByIdAsync(fdtypeId);
-            return fdType != null ? MapToResponseDto(fdType) : null;
+            return fdType != null ? _mapper.Map<FDTypeResponseDto>(fdType) : null;
         }
 
         public async Task<IEnumerable<FDTypeResponseDto>> GetAllFDTypesAsync()
         {
             var fdTypes = await _fdTypeRepository.GetAllAsync();
-            return fdTypes.Select(MapToResponseDto);
-        }
-
-        private FDTypeResponseDto MapToResponseDto(Fdtype fdType)
-        {
-            return new FDTypeResponseDto
-            {
-                FdtypeId = fdType.FdtypeId,
-                Name = fdType.Name,
-                Description = fdType.Description,
-                IsActive = fdType.IsActive,
-                CreatedBy = fdType.CreatedBy,
-                ModifiedBy = fdType.ModifiedBy
-            };
+            return fdTypes.Select(_mapper.Map<FDTypeResponseDto>);
         }
     }
 } 

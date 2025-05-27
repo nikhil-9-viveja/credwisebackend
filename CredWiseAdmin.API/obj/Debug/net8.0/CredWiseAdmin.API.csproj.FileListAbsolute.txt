@@ -160,6 +160,7 @@ C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.API\obj\Debug\net8.0\CredWise
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.API\obj\Debug\net8.0\CredWiseAdmin.API.csproj.CoreCompileInputs.cache
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.API\obj\Debug\net8.0\CredWiseAdmin.API.MvcApplicationPartsAssemblyInfo.cs
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.API\obj\Debug\net8.0\CredWiseAdmin.API.MvcApplicationPartsAssemblyInfo.cache
+C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.API\obj\Debug\net8.0\CredWiseAdmin.API.sourcelink.json
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.API\obj\Debug\net8.0\scopedcss\bundle\CredWiseAdmin.API.styles.css
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.API\obj\Debug\net8.0\staticwebassets.development.json
