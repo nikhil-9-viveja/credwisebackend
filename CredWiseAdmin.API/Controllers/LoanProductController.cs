@@ -121,6 +121,18 @@ namespace CredWiseAdmin.API.Controllers
             return Ok(_mapper.Map<LoanProductResponseDto>(product));
         }
 
+        [HttpPut("{id}/status")]
+        public async Task<ActionResult<LoanProductResponseDto>> ToggleStatus(int id)
+        {
+            var product = await _loanProductService.GetLoanProductByIdAsync(id);
+            if (product == null) return NotFound();
+
+            product.IsActive = !product.IsActive; // Toggle status
+            var modifiedBy = "system"; // Replace with actual user context
+            var updated = await _loanProductService.UpdateLoanProductAsync(product, modifiedBy);
+            return Ok(_mapper.Map<LoanProductResponseDto>(updated));
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

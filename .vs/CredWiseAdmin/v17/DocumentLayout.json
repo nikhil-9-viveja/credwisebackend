@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\cSHARP\\credwisebackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F7873A34-2C24-4B64-9D79-BD7341E13B4F}|CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj|c:\\csharp\\credwisebackend\\credwiseadmin.core\\dtos\\loanproduct\\loanproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7873A34-2C24-4B64-9D79-BD7341E13B4F}|CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj|solutionrelative:credwiseadmin.core\\dtos\\loanproduct\\loanproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A389D41A-B69E-4FD8-B2B1-18A5C73C235E}|CredWiseAdmin.Service\\CredWiseAdmin.Service.csproj|c:\\csharp\\credwisebackend\\credwiseadmin.service\\loanproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A389D41A-B69E-4FD8-B2B1-18A5C73C235E}|CredWiseAdmin.Service\\CredWiseAdmin.Service.csproj|solutionrelative:credwiseadmin.service\\loanproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -95,10 +99,6 @@
       "RelativeMoniker": "D:0:0:{F7873A34-2C24-4B64-9D79-BD7341E13B4F}|CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj|solutionrelative:credwiseadmin.core\\mappings\\loanproductmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7873A34-2C24-4B64-9D79-BD7341E13B4F}|CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj|c:\\csharp\\credwisebackend\\credwiseadmin.core\\dtos\\loanproduct\\loanproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7873A34-2C24-4B64-9D79-BD7341E13B4F}|CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj|solutionrelative:credwiseadmin.core\\dtos\\loanproduct\\loanproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7873A34-2C24-4B64-9D79-BD7341E13B4F}|CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj|c:\\csharp\\credwisebackend\\credwiseadmin.core\\dtos\\loanproduct\\loanproductfeatureresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7873A34-2C24-4B64-9D79-BD7341E13B4F}|CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj|solutionrelative:credwiseadmin.core\\dtos\\loanproduct\\loanproductfeatureresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -142,36 +142,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoanProductService.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\LoanProductService.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Service\\LoanProductService.cs",
               "ToolTip": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\LoanProductService.cs",
               "RelativeToolTip": "CredWiseAdmin.Service\\LoanProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T06:36:40.65Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FDApplicationService.cs",
-              "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\FDApplicationService.cs",
-              "RelativeDocumentMoniker": "CredWiseAdmin.Service\\FDApplicationService.cs",
-              "ToolTip": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\FDApplicationService.cs",
-              "RelativeToolTip": "CredWiseAdmin.Service\\FDApplicationService.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAlwCoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T03:16:09.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoanProductRepository.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\LoanProductRepository.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Repository\\LoanProductRepository.cs",
@@ -179,12 +167,11 @@
               "RelativeToolTip": "CredWiseAdmin.Repository\\LoanProductRepository.cs",
               "ViewState": "AgIAAE8BAAAAAAAAAAAowAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T05:30:27.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T05:30:27.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.API\\Program.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.API\\Program.cs",
@@ -192,12 +179,11 @@
               "RelativeToolTip": "CredWiseAdmin.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T05:41:11.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T05:41:11.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ILoanProductRepository.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\Interfaces\\ILoanProductRepository.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Repository\\Interfaces\\ILoanProductRepository.cs",
@@ -205,12 +191,11 @@
               "RelativeToolTip": "CredWiseAdmin.Repository\\Interfaces\\ILoanProductRepository.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAuwB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T05:30:58.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T05:30:58.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Repository\\UserRepository.cs",
@@ -222,7 +207,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "LoanProductResponseDto.cs",
+              "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\DTOs\\LoanProduct\\LoanProductResponseDto.cs",
+              "RelativeDocumentMoniker": "CredWiseAdmin.Core\\DTOs\\LoanProduct\\LoanProductResponseDto.cs",
+              "ToolTip": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\DTOs\\LoanProduct\\LoanProductResponseDto.cs",
+              "RelativeToolTip": "CredWiseAdmin.Core\\DTOs\\LoanProduct\\LoanProductResponseDto.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswB0AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T08:54:57.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FDApplicationService.cs",
+              "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\FDApplicationService.cs",
+              "RelativeDocumentMoniker": "CredWiseAdmin.Service\\FDApplicationService.cs",
+              "ToolTip": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\FDApplicationService.cs",
+              "RelativeToolTip": "CredWiseAdmin.Service\\FDApplicationService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAlwCoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T03:16:09.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ILoanProductService.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\Interfaces\\ILoanProductService.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Service\\Interfaces\\ILoanProductService.cs",
@@ -230,12 +240,11 @@
               "RelativeToolTip": "CredWiseAdmin.Service\\Interfaces\\ILoanProductService.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAcwAoAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T08:27:25.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T08:27:25.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FDTypeService.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\FDTypeService.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Service\\FDTypeService.cs",
@@ -247,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "FDApplicationResponseDto.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\DTOs\\FDProduct\\FDApplicationResponseDto.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Core\\DTOs\\FDProduct\\FDApplicationResponseDto.cs",
@@ -259,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "FDTypeRepository.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\FDTypeRepository.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Repository\\FDTypeRepository.cs",
@@ -271,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "FDTransactionRepository.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\FDTransactionRepository.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Repository\\FDTransactionRepository.cs",
@@ -283,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FDApplicationRepository.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\FDApplicationRepository.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Repository\\FDApplicationRepository.cs",
@@ -295,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "FDTransactionService.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\FDTransactionService.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Service\\FDTransactionService.cs",
@@ -307,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CreateLoanProductDto.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\DTOs\\LoanProduct\\CreateLoanProductDto.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Core\\DTOs\\LoanProduct\\CreateLoanProductDto.cs",
@@ -319,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "CredWiseAdmin.API.csproj",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.API\\CredWiseAdmin.API.csproj",
               "RelativeDocumentMoniker": "CredWiseAdmin.API\\CredWiseAdmin.API.csproj",
@@ -331,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CredWiseAdmin.API.GlobalUsings.g.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.API\\obj\\Debug\\net8.0\\CredWiseAdmin.API.GlobalUsings.g.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.API\\obj\\Debug\\net8.0\\CredWiseAdmin.API.GlobalUsings.g.cs",
@@ -343,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "CredWiseAdmin.API\\Properties\\launchSettings.json",
@@ -355,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.API\\appsettings.json",
               "RelativeDocumentMoniker": "CredWiseAdmin.API\\appsettings.json",
@@ -367,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "LoanProductController.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.API\\Controllers\\LoanProductController.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.API\\Controllers\\LoanProductController.cs",
@@ -379,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Repository\\Context\\AppDbContext.cs",
@@ -391,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\Interfaces\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Repository\\Interfaces\\IGenericRepository.cs",
@@ -403,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "LoanProduct.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\Entities\\LoanProduct.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Core\\Entities\\LoanProduct.cs",
@@ -415,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "LoanProductMappingProfile.cs",
               "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\Mappings\\LoanProductMappingProfile.cs",
               "RelativeDocumentMoniker": "CredWiseAdmin.Core\\Mappings\\LoanProductMappingProfile.cs",
@@ -424,18 +433,6 @@
               "ViewState": "AgIAACwAAAAAAAAAAAA2wDcAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T06:58:31.123Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "LoanProductResponseDto.cs",
-              "DocumentMoniker": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\DTOs\\LoanProduct\\LoanProductResponseDto.cs",
-              "RelativeDocumentMoniker": "CredWiseAdmin.Core\\DTOs\\LoanProduct\\LoanProductResponseDto.cs",
-              "ToolTip": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\DTOs\\LoanProduct\\LoanProductResponseDto.cs",
-              "RelativeToolTip": "CredWiseAdmin.Core\\DTOs\\LoanProduct\\LoanProductResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T08:54:57.12Z"
             },
             {
               "$type": "Document",

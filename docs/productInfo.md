@@ -48,13 +48,23 @@ Payment methods:
 
 ## Loan Products
 
+### Common Loan Product Features
+All loan products share these base attributes:
+- Title and Description
+- Product Image
+- Maximum Loan Amount
+- Loan Type Classification
+- Active/Inactive Status
+- Audit Fields (Created/Modified by/at)
+
 ### 1. Home Loans
 #### Features
 - Maximum loan amount: Up to ₹10,000,000
 - Tenure: 1-600 months
-- Interest rates: 0.1% - 100%
-- Processing fee: Up to ₹1,000,000
-- Down payment percentage: 0-100%
+- Interest rate: Configurable
+- Processing fee: Configurable
+- Down payment percentage: Configurable
+- Repayment type: EMI
 
 #### Required Documents
 - PAN Card
@@ -66,9 +76,10 @@ Payment methods:
 #### Features
 - Maximum loan amount: Up to ₹10,000,000
 - Tenure: 1-600 months
-- Interest rates: 0.1% - 100%
-- Processing fee: Up to ₹1,000,000
-- Minimum salary requirement: Up to ₹10,000,000
+- Interest rate: Configurable
+- Processing fee: Configurable
+- Minimum salary requirement: Configurable
+- Repayment type: EMI
 
 #### Required Documents
 - PAN Card
@@ -79,10 +90,10 @@ Payment methods:
 #### Features
 - Maximum loan amount: Up to ₹10,000,000
 - Tenure: 1-600 months
-- Interest rates: 0.1% - 100%
-- Processing fee: Up to ₹1,000,000
-- Gold purity requirements
-- Flexible repayment options
+- Interest rate: Configurable
+- Processing fee: Configurable
+- Gold purity requirements: Configurable
+- Flexible repayment options: Configurable
 
 #### Required Documents
 - PAN Card
@@ -96,25 +107,31 @@ Payment methods:
 - Role-based access control
 - Audit logging
 - Transaction tracking
+- Created/Modified tracking for all entities
 
 ### User Management
 - User registration and authentication
 - Profile management
 - Document verification
 - Application tracking
+- User activity logging
 
 ### Transaction Management
 - Real-time transaction processing
 - Multiple payment method support
 - Transaction status tracking
 - Automated notifications
+- Audit trail for all transactions
 
-### System Requirements
+### System Architecture
 - .NET Core based API
 - SQL Server database
 - RESTful API architecture
 - AutoMapper for object mapping
 - Entity Framework Core for data access
+- Repository pattern implementation
+- Service layer for business logic
+- DTO pattern for data transfer
 
 ## API Endpoints
 
@@ -126,18 +143,25 @@ Payment methods:
 - `GET /api/FDApplication` - Get all FD applications
 
 ### Loan Product Endpoints
-- `POST /api/LoanProduct` - Create new loan product
-- `PUT /api/LoanProduct` - Update loan product
+- `GET /api/LoanProduct` - Get all loan products (with optional includeInactive parameter)
+- `GET /api/LoanProduct/active` - Get active loan products
+- `GET /api/LoanProduct/type/{loanType}` - Get loan products by type
 - `GET /api/LoanProduct/{id}` - Get loan product details
-- `GET /api/LoanProduct` - Get all loan products
+- `POST /api/LoanProduct` - Create new loan product
+- `POST /api/LoanProduct/home` - Create home loan product
+- `POST /api/LoanProduct/personal` - Create personal loan product
+- `POST /api/LoanProduct/gold` - Create gold loan product
 
 ## Data Validation
 All products implement comprehensive validation rules:
-- Amount ranges
-- Interest rate limits
+- Amount ranges and limits
+- Interest rate validation
 - Document requirements
 - Status transitions
 - User eligibility criteria
+- Type-specific validation rules
+- Business rule validation
+- Unique title validation
 
 ## Error Handling
 The system implements robust error handling:
@@ -146,3 +170,19 @@ The system implements robust error handling:
 - Transaction rollback
 - Error logging
 - User-friendly error messages
+- Exception handling middleware
+- Business exception handling
+- Validation exception handling
+
+## Database Schema
+The system uses a relational database with the following key entities:
+- LoanProduct (Base entity for all loan types)
+- HomeLoanDetail
+- PersonalLoanDetail
+- GoldLoanDetail
+- LoanProductDocument
+- FDType
+- User
+- LoanApplication
+
+Each entity includes audit fields (CreatedBy, CreatedAt, ModifiedBy, ModifiedAt) and active status tracking.

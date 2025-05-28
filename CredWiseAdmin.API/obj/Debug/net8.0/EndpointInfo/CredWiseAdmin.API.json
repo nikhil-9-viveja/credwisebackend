@@ -993,6 +993,46 @@
         }
       }
     },
+    "/api/LoanProduct/{id}/status": {
+      "put": {
+        "tags": [
+          "LoanProduct"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -1707,6 +1747,9 @@
           },
           "loanDetail": {
             "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
