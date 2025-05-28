@@ -11,3 +11,16 @@ C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Core\obj\Debug\net8.0\CredWis
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Core\obj\Debug\net8.0\refint\CredWiseAdmin.Core.dll
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.pdb
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Core\obj\Debug\net8.0\ref\CredWiseAdmin.Core.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\bin\Debug\net8.0\CredWiseAdmin.Core.deps.json
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\bin\Debug\net8.0\CredWiseAdmin.Core.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\bin\Debug\net8.0\CredWiseAdmin.Core.pdb
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.csproj.AssemblyReference.cache
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.AssemblyInfoInputs.cache
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.AssemblyInfo.cs
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.csproj.CoreCompileInputs.cache
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.sourcelink.json
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\refint\CredWiseAdmin.Core.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\CredWiseAdmin.Core.pdb
+C:\cSHARP\credwisebackend\CredWiseAdmin.Core\obj\Debug\net8.0\ref\CredWiseAdmin.Core.dll

@@ -24,9 +24,15 @@ namespace CredWiseAdmin.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<LoanProductListResponse>> GetLoanProducts()
+        public async Task<ActionResult<LoanProductListResponse>> GetLoanProducts([FromQuery] bool includeInactive = false)
         {
-            var response = await _loanProductService.GetLoanProductsAsync();
+            var products = await _loanProductService.GetAllLoanProductsAsync(includeInactive);
+            var response = new LoanProductListResponse
+            {
+                Success = true,
+                Data = _mapper.Map<List<LoanProductResponseDto>>(products),
+                Message = "Loan products fetched successfully"
+            };
             return Ok(response);
         }
 

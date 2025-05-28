@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C# project\\credWise\\CredWiseAdmin\\CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj": {}
+    "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj": {}
   },
   "projects": {
-    "C:\\C# project\\credWise\\CredWiseAdmin\\CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj": {
+    "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C# project\\credWise\\CredWiseAdmin\\CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj",
+        "projectUniqueName": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj",
         "projectName": "CredWiseAdmin.Core",
-        "projectPath": "C:\\C# project\\credWise\\CredWiseAdmin\\CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj",
-        "packagesPath": "C:\\Users\\D Nikhil Yadav\\.nuget\\packages\\",
-        "outputPath": "C:\\C# project\\credWise\\CredWiseAdmin\\CredWiseAdmin.Core\\obj\\",
+        "projectPath": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\CredWiseAdmin.Core.csproj",
+        "packagesPath": "C:\\Users\\Naveen Thota\\.nuget\\packages\\",
+        "outputPath": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\D Nikhil Yadav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Naveen Thota\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

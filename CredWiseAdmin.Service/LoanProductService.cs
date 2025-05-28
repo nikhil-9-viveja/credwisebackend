@@ -29,9 +29,14 @@ namespace CredWiseAdmin.Service
             };
         }
 
+        public async Task<IEnumerable<LoanProduct>> GetAllLoanProductsAsync(bool includeInactive)
+        {
+            return await _loanProductRepository.GetAllLoanProductsAsync(includeInactive);
+        }
+
         public async Task<IEnumerable<LoanProduct>> GetAllLoanProductsAsync()
         {
-            return await _loanProductRepository.GetAllAsync();
+            return await GetAllLoanProductsAsync(false);
         }
 
         public async Task<IEnumerable<LoanProduct>> GetActiveLoanProductsAsync()
