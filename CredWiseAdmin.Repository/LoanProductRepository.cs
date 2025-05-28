@@ -335,5 +335,31 @@ namespace CredWiseAdmin.Repository
 
             return loanProduct;
         }
+
+        public async Task<IEnumerable<LoanProduct>> GetAllLoanProductsAsync(bool includeInactive)
+        {
+            if (includeInactive)
+            {
+                return await _dbSet
+                    .Include(x => x.HomeLoanDetail)
+                    .Include(x => x.PersonalLoanDetail)
+                    .Include(x => x.GoldLoanDetail)
+                    .ToListAsync();
+            }
+            else
+            {
+                return await _dbSet
+                    .Where(x => x.IsActive)
+                    .Include(x => x.HomeLoanDetail)
+                    .Include(x => x.PersonalLoanDetail)
+                    .Include(x => x.GoldLoanDetail)
+                    .ToListAsync();
+            }
+        }
+
+        public async Task<IEnumerable<LoanProduct>> GetAllLoanProductsAsync()
+        {
+            return await GetAllLoanProductsAsync(false);
+        }
     }
 } 

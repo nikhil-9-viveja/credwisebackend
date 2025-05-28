@@ -21,5 +21,6 @@ namespace CredWiseAdmin.Service.Interfaces
         Task<LoanProduct> CreateHomeLoanProductAsync(CreateHomeLoanProductDto dto, string createdBy);
         Task<LoanProduct> CreatePersonalLoanProductAsync(CreatePersonalLoanProductDto dto, string createdBy);
         Task<LoanProduct> CreateGoldLoanProductAsync(CreateGoldLoanProductDto dto, string createdBy);
+        Task<IEnumerable<LoanProduct>> GetAllLoanProductsAsync(bool includeInactive);
     }
 } 

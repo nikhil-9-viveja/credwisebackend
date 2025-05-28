@@ -16,3 +16,21 @@ C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\Cred
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\refint\CredWiseAdmin.Service.dll
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.pdb
 C:\C# project\credWise\CredWiseAdmin\CredWiseAdmin.Service\obj\Debug\net8.0\ref\CredWiseAdmin.Service.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\bin\Debug\net8.0\CredWiseAdmin.Service.deps.json
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\bin\Debug\net8.0\CredWiseAdmin.Service.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\bin\Debug\net8.0\CredWiseAdmin.Service.pdb
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\bin\Debug\net8.0\CredWiseAdmin.Core.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\bin\Debug\net8.0\CredWiseAdmin.Repository.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\bin\Debug\net8.0\CredWiseAdmin.Repository.pdb
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\bin\Debug\net8.0\CredWiseAdmin.Core.pdb
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.csproj.AssemblyReference.cache
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.AssemblyInfoInputs.cache
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.AssemblyInfo.cs
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.csproj.CoreCompileInputs.cache
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.sourcelink.json
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWise.45AD821A.Up2Date
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\refint\CredWiseAdmin.Service.dll
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\CredWiseAdmin.Service.pdb
+C:\cSHARP\credwisebackend\CredWiseAdmin.Service\obj\Debug\net8.0\ref\CredWiseAdmin.Service.dll
