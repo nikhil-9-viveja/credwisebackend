@@ -140,5 +140,32 @@ namespace CredWiseAdmin.API.Controllers
             await _loanProductService.DeleteLoanProductAsync(id, modifiedBy);
             return NoContent();
         }
+
+        [HttpPut("personal/{id}")]
+        public async Task<ActionResult<LoanProductResponseDto>> UpdatePersonalLoan(int id, [FromBody] UpdatePersonalLoanProductDto dto)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var modifiedBy = "system"; // Replace with actual user context
+            var product = await _loanProductService.UpdatePersonalLoanProductAsync(id, dto, modifiedBy);
+            return Ok(_mapper.Map<LoanProductResponseDto>(product));
+        }
+
+        [HttpPut("home/{id}")]
+        public async Task<ActionResult<LoanProductResponseDto>> UpdateHomeLoan(int id, [FromBody] UpdateHomeLoanProductDto dto)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var modifiedBy = "system"; // Replace with actual user context
+            var product = await _loanProductService.UpdateHomeLoanProductAsync(id, dto, modifiedBy);
+            return Ok(_mapper.Map<LoanProductResponseDto>(product));
+        }
+
+        [HttpPut("gold/{id}")]
+        public async Task<ActionResult<LoanProductResponseDto>> UpdateGoldLoan(int id, [FromBody] UpdateGoldLoanProductDto dto)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            var modifiedBy = "system"; // Replace with actual user context
+            var product = await _loanProductService.UpdateGoldLoanProductAsync(id, dto, modifiedBy);
+            return Ok(_mapper.Map<LoanProductResponseDto>(product));
+        }
     }
 } 

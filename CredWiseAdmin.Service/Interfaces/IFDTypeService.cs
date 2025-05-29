@@ -9,5 +9,6 @@ namespace CredWiseAdmin.Service.Interfaces
         Task<bool> DeleteFDTypeAsync(int fdtypeId, string modifiedBy);
         Task<FDTypeResponseDto?> GetFDTypeByIdAsync(int fdtypeId);
         Task<IEnumerable<FDTypeResponseDto>> GetAllFDTypesAsync();
+        Task<FDTypeResponseDto?> ToggleFDTypeStatusAsync(int fdtypeId, string modifiedBy);
     }
 } 

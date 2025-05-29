@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using CredWiseAdmin.Service.Interfaces;
 using AutoMapper;
+using System.Linq;
 
 namespace CredWiseAdmin.Service
 {
@@ -97,6 +98,20 @@ namespace CredWiseAdmin.Service
         {
             var fdTypes = await _fdTypeRepository.GetAllAsync();
             return fdTypes.Select(_mapper.Map<FDTypeResponseDto>);
+        }
+
+        public async Task<FDTypeResponseDto?> ToggleFDTypeStatusAsync(int fdtypeId, string modifiedBy)
+        {
+            var fdType = await _fdTypeRepository.GetByIdAsync(fdtypeId);
+            if (fdType == null)
+                return null;
+
+            fdType.IsActive = !fdType.IsActive;
+            fdType.ModifiedBy = modifiedBy;
+            fdType.ModifiedAt = DateTime.UtcNow;
+
+            var updated = await _fdTypeRepository.UpdateAsync(fdType);
+            return _mapper.Map<FDTypeResponseDto>(updated);
         }
     }
 } 

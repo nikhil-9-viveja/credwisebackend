@@ -2866,23 +2866,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Naveen Thota\\.nuget\\packages\\": {},
+    "C:\\Users\\Sai Sahith Ajju\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\CredWiseAdmin.Service.csproj",
+      "projectUniqueName": "C:\\Users\\Sai Sahith Ajju\\Desktop\\Nik\\credwisebackend\\CredWiseAdmin.Service\\CredWiseAdmin.Service.csproj",
       "projectName": "CredWiseAdmin.Service",
-      "projectPath": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\CredWiseAdmin.Service.csproj",
-      "packagesPath": "C:\\Users\\Naveen Thota\\.nuget\\packages\\",
-      "outputPath": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Service\\obj\\",
+      "projectPath": "C:\\Users\\Sai Sahith Ajju\\Desktop\\Nik\\credwisebackend\\CredWiseAdmin.Service\\CredWiseAdmin.Service.csproj",
+      "packagesPath": "C:\\Users\\Sai Sahith Ajju\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sai Sahith Ajju\\Desktop\\Nik\\credwisebackend\\CredWiseAdmin.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Naveen Thota\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sai Sahith Ajju\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2897,8 +2897,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\CredWiseAdmin.Repository.csproj": {
-              "projectPath": "C:\\cSHARP\\credwisebackend\\CredWiseAdmin.Repository\\CredWiseAdmin.Repository.csproj"
+            "C:\\Users\\Sai Sahith Ajju\\Desktop\\Nik\\credwisebackend\\CredWiseAdmin.Repository\\CredWiseAdmin.Repository.csproj": {
+              "projectPath": "C:\\Users\\Sai Sahith Ajju\\Desktop\\Nik\\credwisebackend\\CredWiseAdmin.Repository\\CredWiseAdmin.Repository.csproj"
             }
           }
         }
@@ -2934,7 +2934,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

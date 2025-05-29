@@ -266,5 +266,132 @@ namespace CredWiseAdmin.Service
         {
             return await _loanProductRepository.CreateGoldLoanProductAsync(dto, createdBy);
         }
+
+        public async Task<LoanProduct> UpdatePersonalLoanProductAsync(int id, UpdatePersonalLoanProductDto dto, string modifiedBy)
+        {
+            if (dto == null)
+                throw new ArgumentNullException(nameof(dto));
+            if (string.IsNullOrWhiteSpace(modifiedBy))
+                throw new ArgumentException("Modified by cannot be empty", nameof(modifiedBy));
+
+            // Fetch the base loan product
+            var loanProduct = await _loanProductRepository.GetByIdAsync(id);
+            if (loanProduct == null)
+                throw new NotFoundException($"Loan product with ID {id} not found.");
+            if (loanProduct.LoanType.ToUpper() != "PERSONAL")
+                throw new BusinessException("Loan product is not of type PERSONAL.");
+
+            // Update base fields
+            loanProduct.Title = dto.Title;
+            loanProduct.Description = dto.Description;
+            loanProduct.ImageUrl = dto.ImageUrl;
+            loanProduct.MaxLoanAmount = dto.MaxLoanAmount;
+            loanProduct.LoanType = dto.LoanType;
+            loanProduct.ModifiedAt = DateTime.UtcNow;
+            loanProduct.ModifiedBy = modifiedBy;
+
+            await _loanProductRepository.UpdateAsync(loanProduct);
+
+            // Fetch and update personal loan detail
+            var personalDetail = await _loanProductRepository.GetPersonalLoanDetailAsync(id);
+            if (personalDetail == null)
+                throw new NotFoundException($"Personal loan detail for product ID {id} not found.");
+
+            personalDetail.InterestRate = dto.InterestRate;
+            personalDetail.TenureMonths = dto.TenureMonths;
+            personalDetail.ProcessingFee = dto.ProcessingFee;
+            personalDetail.MinSalaryRequired = dto.MinSalaryRequired;
+            personalDetail.ModifiedAt = DateTime.UtcNow;
+            personalDetail.ModifiedBy = modifiedBy;
+
+            await _loanProductRepository.UpdatePersonalLoanDetailAsync(personalDetail);
+
+            return loanProduct;
+        }
+
+        public async Task<LoanProduct> UpdateHomeLoanProductAsync(int id, UpdateHomeLoanProductDto dto, string modifiedBy)
+        {
+            if (dto == null)
+                throw new ArgumentNullException(nameof(dto));
+            if (string.IsNullOrWhiteSpace(modifiedBy))
+                throw new ArgumentException("Modified by cannot be empty", nameof(modifiedBy));
+
+            // Fetch the base loan product
+            var loanProduct = await _loanProductRepository.GetByIdAsync(id);
+            if (loanProduct == null)
+                throw new NotFoundException($"Loan product with ID {id} not found.");
+            if (loanProduct.LoanType.ToUpper() != "HOME")
+                throw new BusinessException("Loan product is not of type HOME.");
+
+            // Update base fields
+            loanProduct.Title = dto.Title;
+            loanProduct.Description = dto.Description;
+            loanProduct.ImageUrl = dto.ImageUrl;
+            loanProduct.MaxLoanAmount = dto.MaxLoanAmount;
+            loanProduct.LoanType = dto.LoanType;
+            loanProduct.ModifiedAt = DateTime.UtcNow;
+            loanProduct.ModifiedBy = modifiedBy;
+
+            await _loanProductRepository.UpdateAsync(loanProduct);
+
+            // Fetch and update home loan detail
+            var homeDetail = await _loanProductRepository.GetHomeLoanDetailAsync(id);
+            if (homeDetail == null)
+                throw new NotFoundException($"Home loan detail for product ID {id} not found.");
+
+            homeDetail.InterestRate = dto.InterestRate;
+            homeDetail.TenureMonths = dto.TenureMonths;
+            homeDetail.ProcessingFee = dto.ProcessingFee;
+            homeDetail.DownPaymentPercentage = dto.DownPaymentPercentage;
+            homeDetail.ModifiedAt = DateTime.UtcNow;
+            homeDetail.ModifiedBy = modifiedBy;
+
+            await _loanProductRepository.UpdateHomeLoanDetailAsync(homeDetail);
+
+            return loanProduct;
+        }
+
+        public async Task<LoanProduct> UpdateGoldLoanProductAsync(int id, UpdateGoldLoanProductDto dto, string modifiedBy)
+        {
+            if (dto == null)
+                throw new ArgumentNullException(nameof(dto));
+            if (string.IsNullOrWhiteSpace(modifiedBy))
+                throw new ArgumentException("Modified by cannot be empty", nameof(modifiedBy));
+
+            // Fetch the base loan product
+            var loanProduct = await _loanProductRepository.GetByIdAsync(id);
+            if (loanProduct == null)
+                throw new NotFoundException($"Loan product with ID {id} not found.");
+            if (loanProduct.LoanType.ToUpper() != "GOLD")
+                throw new BusinessException("Loan product is not of type GOLD.");
+
+            // Update base fields
+            loanProduct.Title = dto.Title;
+            loanProduct.Description = dto.Description;
+            loanProduct.ImageUrl = dto.ImageUrl;
+            loanProduct.MaxLoanAmount = dto.MaxLoanAmount;
+            loanProduct.LoanType = dto.LoanType;
+            loanProduct.ModifiedAt = DateTime.UtcNow;
+            loanProduct.ModifiedBy = modifiedBy;
+
+            await _loanProductRepository.UpdateAsync(loanProduct);
+
+            // Fetch and update gold loan detail
+            var goldDetail = await _loanProductRepository.GetGoldLoanDetailAsync(id);
+            if (goldDetail == null)
+                throw new NotFoundException($"Gold loan detail for product ID {id} not found.");
+
+            goldDetail.InterestRate = dto.InterestRate;
+            goldDetail.TenureMonths = dto.TenureMonths;
+            goldDetail.ProcessingFee = dto.ProcessingFee;
+            goldDetail.GoldPurityRequired = dto.GoldPurityRequired;
+            goldDetail.RepaymentType = dto.RepaymentType;
+            goldDetail.ModifiedAt = DateTime.UtcNow;
+            goldDetail.ModifiedBy = modifiedBy;
+
+            await _loanProductRepository.UpdateGoldLoanDetailAsync(goldDetail);
+
+            return loanProduct;
+        }
     }
 } 
