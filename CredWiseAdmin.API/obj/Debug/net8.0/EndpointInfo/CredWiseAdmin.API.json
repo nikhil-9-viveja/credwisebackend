@@ -434,9 +434,58 @@
           }
         }
       },
+      "get": {
+        "tags": [
+          "FDType"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FDTypeResponseDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FDTypeResponseDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FDTypeResponseDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/FDType/{id}": {
       "put": {
         "tags": [
           "FDType"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -480,44 +529,6 @@
           }
         }
       },
-      "get": {
-        "tags": [
-          "FDType"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FDTypeResponseDto"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FDTypeResponseDto"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/FDTypeResponseDto"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/FDType/{id}": {
       "delete": {
         "tags": [
           "FDType"
@@ -540,6 +551,46 @@
         }
       },
       "get": {
+        "tags": [
+          "FDType"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FDTypeResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FDTypeResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FDTypeResponseDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/FDType/{id}/status": {
+      "put": {
         "tags": [
           "FDType"
         ],
@@ -1009,6 +1060,183 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LoanProduct/personal/{id}": {
+      "put": {
+        "tags": [
+          "LoanProduct"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonalLoanProductDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonalLoanProductDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePersonalLoanProductDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LoanProduct/home/{id}": {
+      "put": {
+        "tags": [
+          "LoanProduct"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHomeLoanProductDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHomeLoanProductDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateHomeLoanProductDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoanProductResponseDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LoanProduct/gold/{id}": {
+      "put": {
+        "tags": [
+          "LoanProduct"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateGoldLoanProductDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateGoldLoanProductDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateGoldLoanProductDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",
@@ -1938,6 +2166,145 @@
         },
         "additionalProperties": false
       },
+      "UpdateGoldLoanProductDto": {
+        "required": [
+          "description",
+          "goldPurityRequired",
+          "imageUrl",
+          "interestRate",
+          "loanType",
+          "maxLoanAmount",
+          "processingFee",
+          "repaymentType",
+          "tenureMonths",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "title": {
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
+            "minLength": 10,
+            "type": "string"
+          },
+          "imageUrl": {
+            "minLength": 1,
+            "type": "string",
+            "format": "uri"
+          },
+          "maxLoanAmount": {
+            "maximum": 10000000,
+            "minimum": 1000,
+            "type": "number",
+            "format": "double"
+          },
+          "loanType": {
+            "minLength": 1,
+            "pattern": "^GOLD$",
+            "type": "string"
+          },
+          "interestRate": {
+            "maximum": 100,
+            "minimum": 0.1,
+            "type": "number",
+            "format": "double"
+          },
+          "tenureMonths": {
+            "maximum": 600,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "processingFee": {
+            "maximum": 1000000,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "goldPurityRequired": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "repaymentType": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateHomeLoanProductDto": {
+        "required": [
+          "description",
+          "downPaymentPercentage",
+          "imageUrl",
+          "interestRate",
+          "loanType",
+          "maxLoanAmount",
+          "processingFee",
+          "tenureMonths",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "title": {
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
+            "minLength": 10,
+            "type": "string"
+          },
+          "imageUrl": {
+            "minLength": 1,
+            "type": "string",
+            "format": "uri"
+          },
+          "maxLoanAmount": {
+            "maximum": 10000000,
+            "minimum": 1000,
+            "type": "number",
+            "format": "double"
+          },
+          "loanType": {
+            "minLength": 1,
+            "pattern": "^HOME$",
+            "type": "string"
+          },
+          "interestRate": {
+            "maximum": 100,
+            "minimum": 0.1,
+            "type": "number",
+            "format": "double"
+          },
+          "tenureMonths": {
+            "maximum": 600,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "processingFee": {
+            "maximum": 1000000,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "downPaymentPercentage": {
+            "maximum": 100,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "UpdateLoanProductDto": {
         "required": [
           "description",
@@ -1981,6 +2348,73 @@
           },
           "isActive": {
             "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePersonalLoanProductDto": {
+        "required": [
+          "description",
+          "imageUrl",
+          "interestRate",
+          "loanType",
+          "maxLoanAmount",
+          "minSalaryRequired",
+          "processingFee",
+          "tenureMonths",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "title": {
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
+            "minLength": 10,
+            "type": "string"
+          },
+          "imageUrl": {
+            "minLength": 1,
+            "type": "string",
+            "format": "uri"
+          },
+          "maxLoanAmount": {
+            "maximum": 10000000,
+            "minimum": 1000,
+            "type": "number",
+            "format": "double"
+          },
+          "loanType": {
+            "minLength": 1,
+            "pattern": "^PERSONAL$",
+            "type": "string"
+          },
+          "interestRate": {
+            "maximum": 100,
+            "minimum": 0.1,
+            "type": "number",
+            "format": "double"
+          },
+          "tenureMonths": {
+            "maximum": 600,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "processingFee": {
+            "maximum": 1000000,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "minSalaryRequired": {
+            "maximum": 10000000,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

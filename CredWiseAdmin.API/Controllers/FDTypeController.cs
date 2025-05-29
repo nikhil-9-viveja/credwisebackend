@@ -28,9 +28,10 @@ namespace CredWiseAdmin.API.Controllers
             return Ok(result);
         }
 
-        [HttpPut]
-        public async Task<ActionResult<FDTypeResponseDto>> UpdateFDType(UpdateFDTypeDto dto)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<FDTypeResponseDto>> UpdateFDType(int id, [FromBody] UpdateFDTypeDto dto)
         {
+            if (dto.FdtypeId != id) return BadRequest("ID mismatch");
             var result = await _fdTypeService.UpdateFDTypeAsync(dto, User.Identity?.Name ?? "system");
             if (result == null)
                 return NotFound();
@@ -59,6 +60,16 @@ namespace CredWiseAdmin.API.Controllers
         public async Task<ActionResult<IEnumerable<FDTypeResponseDto>>> GetAllFDTypes()
         {
             var result = await _fdTypeService.GetAllFDTypesAsync();
+            return Ok(result);
+        }
+
+        [HttpPut("{id}/status")]
+        public async Task<ActionResult<FDTypeResponseDto>> ToggleFDTypeStatus(int id)
+        {
+            var modifiedBy = User?.Identity?.Name ?? "system";
+            var result = await _fdTypeService.ToggleFDTypeStatusAsync(id, modifiedBy);
+            if (result == null)
+                return NotFound();
             return Ok(result);
         }
     }

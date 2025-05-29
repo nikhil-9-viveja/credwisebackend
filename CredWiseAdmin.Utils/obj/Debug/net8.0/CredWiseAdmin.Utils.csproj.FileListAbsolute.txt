@@ -28,3 +28,18 @@ C:\cSHARP\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\refint\CredWiseAd
 C:\cSHARP\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.pdb
 C:\cSHARP\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.genruntimeconfig.cache
 C:\cSHARP\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\ref\CredWiseAdmin.Utils.dll
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\bin\Debug\net8.0\CredWiseAdmin.Utils.deps.json
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\bin\Debug\net8.0\CredWiseAdmin.Utils.runtimeconfig.json
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\bin\Debug\net8.0\CredWiseAdmin.Utils.dll
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\bin\Debug\net8.0\CredWiseAdmin.Utils.pdb
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.csproj.AssemblyReference.cache
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.AssemblyInfoInputs.cache
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.AssemblyInfo.cs
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.sourcelink.json
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.dll
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\refint\CredWiseAdmin.Utils.dll
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.pdb
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\CredWiseAdmin.Utils.genruntimeconfig.cache
+C:\Users\Sai Sahith Ajju\Desktop\Nik\credwisebackend\CredWiseAdmin.Utils\obj\Debug\net8.0\ref\CredWiseAdmin.Utils.dll

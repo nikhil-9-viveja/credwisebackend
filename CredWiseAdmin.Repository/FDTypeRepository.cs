@@ -19,6 +19,11 @@ namespace CredWiseAdmin.Repository
             return await _dbSet.Where(x => x.IsActive && x.Name.Contains(name)).ToListAsync();
         }
 
+        public override async Task<IEnumerable<Fdtype>> GetAllAsync()
+        {
+            return await _dbSet.ToListAsync();
+        }
+
         // Add FD-specific methods here if needed in the future
     }
-} 
+}
